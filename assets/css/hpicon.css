@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'hp';
+  src:  url('../fonts/hp.eot?pcljeq');
+  src:  url('../fonts/hp.eot?pcljeq#iefix') format('embedded-opentype'),
+    url('../fonts/hp.ttf?pcljeq') format('truetype'),
+    url('../fonts/hp.woff?pcljeq') format('woff'),
+    url('../fonts/hp.svg?pcljeq#hp') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="hp-"], [class*=" hp-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'hp' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.hp-edit:before {
+  content: "\e918";
+}
+.hp-eye:before {
+  content: "\e919";
+}
+.hp-search:before {
+  content: "\e91a";
+  font-size: 24px;
+}
+.hp-dropdown:after {
+  content: "\e917";
+  font-size: 24px;
+}
+.hp-animated_images:before {
+  content: "\e902";
+}
+.hp-ar_stickers:before {
+  content: "\e903";
+}
+.hp-article:before {
+  content: "\e904";
+}
+.hp-article_shortcut:before {
+  content: "\e905";
+}
+.hp-ballot:before {
+  content: "\e906";
+}
+.hp-breaking_news:before {
+  content: "\e907";
+}
+.hp-cerificate:before {
+  content: "\e908";
+}
+.hp-circles_ext:before {
+  content: "\e909";
+}
+.hp-contract:before {
+  content: "\e90a";
+}
+.hp-dns:before {
+  content: "\e90b";
+}
+.hp-EIA:before {
+  content: "\e90c";
+}
+.hp-dot:before {
+  content: "\e916";
+  color: #e66a6a;
+}
+.hp-dot-yellow:before {
+  content: "\e916";
+  color: #EBB700
+}
+.hp-dot-green:before {
+  content: "\e916";
+  color: #005040;
+}
+.hp-featured_play_list:before {
+  content: "\e90d";
+}
+.hp-FSMS:before {
+  content: "\e90e";
+}
+.hp-lab_profile:before {
+  content: "\e90f";
+}
+.hp-list_alt:before {
+  content: "\e910";
+}
+.hp-nbfl-logo-nature-bio-foods-logo-1:before {
+  content: "\e901";
+}
+.hp-notifications_unread:before {
+  content: "\e911";
+}
+.hp-problem:before {
+  content: "\e912";
+}
+.hp-quality:before {
+  content: "\e913";
+  color: #005040;
+}
+.hp-receipt_long:before {
+  content: "\e914";
+}
+.hp-summarize:before {
+  content: "\e915";
+}
+.hp-dashboard:before {
+  content: "\e900";
+}

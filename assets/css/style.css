@@ -390,14 +390,119 @@ h5#addvehicleLabel {
 }
 .lebal-hp {
     font-weight: 500;
+    margin-bottom: 6px;
 }
 .input-hp {
     border: 1px solid #22222230;
     border-radius: 4px;
-    height: 40px;
+    height: 48px;
     padding: 0 12px;
     width: 100%;
     font-size: 16px;
+    color: #22222250;
+}
+.file-input__input {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.file-input__label {
+cursor: pointer;
+display: inline-flex;
+align-items: center;
+border: 1px solid #22222230;
+border-radius: 4px;
+height: 48px;
+padding: 0 12px;
+width: 100%;
+font-size: 16px;
+justify-content: center;
+color: #22222250;
+}
+ .title-sub-form-hp {
+            font-weight: 600;
+            margin-top: 50px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        .title-sub-form-hp input,
+        .sub-hp-form-trf input {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .btn-sec-hp {
+            float: inline-end;
+            margin-top: 40px;
+        }
+
+        .btn-line {
+            background: transparent;
+            color: black;
+            border: 1px solid black;
+            padding: 0.375rem 0.75rem;
+        }
+
+        textarea.text-area-hp {
+    border: 1px solid #22222230;
+    border-radius: 4px;
+    padding: 0 12px;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px 10px;
+}
+.title-sub-form-hp {
+    font-weight: 600;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.title-sub-form-hp input,
+.sub-hp-form-trf input {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.btn-sec-hp {
+    float: inline-end;
+    margin-top: 40px;
+}
+
+.btn-line {
+    background: transparent;
+    color: black;
+    border: 1px solid black;
+    padding: 0.375rem 0.75rem;
+}
+
+.btn-primary {
+    background: #005040 !important;
+}
+textarea.text-area-hp {
+border: 1px solid #22222230;
+border-radius: 4px;
+padding: 0 12px;
+width: 100%;
+font-size: 16px;
+padding: 5px 10px;
+}
+
+.file-input__label svg {
+height: 16px;
+margin: 0 10px;
+}
+.input-hp::placeholder {
+    color: #22222250;
 }
 form.popup-hp .col-lg-6 {
     margin: 7px 0;

@@ -785,3 +785,13 @@ small.small-hp-dom {
 ::placeholder {
     color: #22222250;
 }
+/* gate-entry */
+form.form-hp-gate-entry ul li {
+    display: block;
+}
+form.form-hp-gate-entry ul {
+    padding: 0;
+}
+form.form-hp-gate-entry .form-switch.swetch-hp {
+    width: 30%;
+}

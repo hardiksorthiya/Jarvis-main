@@ -42,7 +42,7 @@
                                     </g>
                                 </svg>
                             </a>
-                            
+
                         </div>
 
 
@@ -145,11 +145,10 @@
                                     </div>
                                 </div>
                                 <div class="row filter my-4">
-                                    
-                                    <div class="col-lg-12">
-                                        <div class="heading-title-page-stack-wise">
+
+                                    <div class="col-lg-12 ">
+                                        <div class="heading-title-page-stack-wise mb-3">
                                             <h5>Detail</h5>
-                                            
                                         </div>
 
                                         <div id="req_input" class="datainputs">
@@ -164,11 +163,12 @@
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
-                                                    </select> 
+                                                    </select>
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Farmer Name" class="lebal-hp">Far. Tracenet ID</label>
-                                                    <input type="text" name="" id="" class="input-hp" placeholder="Number">
+                                                    <input type="text" name="" id="" class="input-hp"
+                                                        placeholder="Number">
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Farmer Name" class="lebal-hp">Crop Name</label>
@@ -180,19 +180,22 @@
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
-                                                    </select> 
+                                                    </select>
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Farmer Name" class="lebal-hp">No. of Bags</label>
-                                                    <input type="text" name="" id="" class="input-hp" placeholder="Number">
+                                                    <input type="text" name="" id="" class="input-hp"
+                                                        placeholder="Number">
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Weight in MT" class="lebal-hp">Weight in MT</label>
-                                                    <input type="text" name="" id="" class="input-hp" placeholder="Number">
+                                                    <input type="text" name="" id="" class="input-hp"
+                                                        placeholder="Number">
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Rate/MT" class="lebal-hp">Rate/MT</label>
-                                                    <input type="text" name="" id="" class="input-hp" placeholder="Number">
+                                                    <input type="text" name="" id="" class="input-hp"
+                                                        placeholder="Number">
                                                 </div>
                                                 <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
                                                     <label for="Status" class="lebal-hp">Status</label>
@@ -204,19 +207,56 @@
                                                         <option value="1">One</option>
                                                         <option value="2">Two</option>
                                                         <option value="3">Three</option>
-                                                    </select> 
+                                                    </select>
                                                 </div>
-                                                <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3">
-                                            <a href="#" id="addmore" class="add_input">+</a>
-
+                                                <div class="col-xxl-3 col-lg-8 col-md-6 col-xl-3 flex-end">
+                                                    <a href="#" id="addmore" class="add_input dispatch-plus">+</a>
                                                 </div>
-                                                
                                             </div>
 
                                         </div>
                                     </div>
                                 </div>
-                               
+
+                                <div class="row filter my-4">
+                                    <div class="heading-title-page-stack-wise mb-3">
+                                        <h5>Transport details</h5>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xxl-3">
+                                        <label for="Truck No." class="lebal-hp">Truck No.</label>
+                                        <input type="text" name="" id="" class="input-hp" placeholder="number">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xxl-3">
+                                        <label for="GR No. Dated (Bilty No.)" class="lebal-hp">GR No. Dated (Bilty
+                                            No.)</label>
+                                        <input type="text" name="" id="" class="input-hp" placeholder="number">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xxl-3">
+                                        <label for="No. of Bags " class="lebal-hp">No. of Bags </label>
+                                        <input type="text" name="" id="" class="input-hp" placeholder="number">
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-xxl-3">
+                                        <label for="Weight in MT " class="lebal-hp">Weight in MT </label>
+                                        <input type="text" name="" id="" class="input-hp" placeholder="number">
+                                    </div>
+                                    <div class="col-lg-12 col-xxl-6">
+                                        <label for="vehicle entry date" class="lebal-hp"> Name and Signature of ICS
+                                            Representative</label>
+                                        <select class="input-hp form-select form-select-lg"
+                                            aria-label=".form-select-lg example">
+                                            <option selected>
+                                                <Select:disabled>Select</Select:disabled>
+                                            </option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+
+
+
+                                    </div>
+                                </div>
+
                                 <div class="btn-sec-hp">
                                     <button class="btn btn-apply btn-line">Cancel</button>
                                     <button class="btn btn-apply btn-primary" style="margin-left: 10px">
@@ -242,8 +282,8 @@
     <script>
         $(document).ready(function () {
             $("#addmore").click(function () {
-                $("#req_input").append('<div class="required_inp"><div class="row stack-add"><div class="col-xxl-3 col-md-6 col-lg-6"><label for="vehicle entry date" class="lebal-hp">Vehicle No</label><input type="text" name="fromdate" class="input-hp" placeholder = "HR38X7334" /></div><div class="col-xxl-3 col-md-6 col-lg-6"><label for="vehicle entry date" class="lebal-hp">Variety</label><input type="text" name="fromdate" class="input-hp" placeholder="LONG GRAIN - 21" /></div><div class="col-xxl-3 col-md-6 col-lg-6"><label for="vehicle entry date" class="lebal-hp">Accepted/Rejected</label><input type="text" name="fromdate" class="input-hp" placeholder="Accepted" /></div><div class="col-xxl-3 col-md-6 col-lg-6"><label for="vehicle entry date" class="lebal-hp">No. of Bags </label><input type="text" name="fromdate" class="input-hp" placeholder="207" /></div></div >' + '<input type="button" class="inputRemove" value="X" /></div>');
-  });
+                $("#req_input").append('<div class="required_inp"><div class= "row"><div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"><label for="Farmer Name" class="lebal-hp">Farmer Name</label><select class="input-hp form-select form-select-lg" aria-label=".form-select-lg example"> <option selected> <Select:disabled>Select</Select:disabled> </option> <option value="1">One</option> <option value="2">Two</option> <option value="3">Three</option> </select> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Farmer Name" class="lebal-hp">Far. Tracenet ID</label> <input type="text" name="" id="" class="input-hp" placeholder="Number"> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Farmer Name" class="lebal-hp">Crop Name</label> <select class="input-hp form-select form-select-lg" aria-label=".form-select-lg example"> <option selected> <Select:disabled>Select</Select:disabled> </option> <option value="1">One</option> <option value="2">Two</option> <option value="3">Three</option> </select> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Farmer Name" class="lebal-hp">No. of Bags</label> <input type="text" name="" id="" class="input-hp" placeholder="Number"> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Weight in MT" class="lebal-hp">Weight in MT</label> <input type="text" name="" id="" class="input-hp" placeholder="Number"> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Rate/MT" class="lebal-hp">Rate/MT</label> <input type="text" name="" id="" class="input-hp" placeholder="Number"> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3"> <label for="Status" class="lebal-hp">Status</label> <select class="input-hp form-select form-select-lg" aria-label=".form-select-lg example"> <option selected> <Select:disabled>Select</Select:disabled> </option> <option value="1">One</option> <option value="2">Two</option> <option value="3">Three</option> </select> </div> <div class="col-xxl-3 col-lg-4 col-md-6 col-xl-3 flex-end"> </div> </div > ' + ' <input type = "button" class= "inputRemove dis-remove-btn" value = "X" /></div > ');
+            });
             $('body').on('click', '.inputRemove', function () {
                 $(this).parent('div.required_inp').remove()
             });

@@ -716,3 +716,43 @@ li.swetch-hp-li {
 textarea.text-area-hp::placeholder {
     color: #22222250;
 }
+/* dispatch report */
+.dispatch-plus {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 40px;
+    color: #222222;
+}
+.flex-end {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+input.inputRemove.dis-remove-btn {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #222222;
+    border-radius: 4px;
+    font-size: 26px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #222222;
+}
+.required_inp {
+    position: relative;
+    margin: 20px 0;
+}
+@media (max-width: 576px) {
+    input.inputRemove.dis-remove-btn {
+        bottom: -30px;
+  }
+}

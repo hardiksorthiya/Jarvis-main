@@ -31,13 +31,13 @@ function showFileName( event ) {
   infoArea.textContent = 'File name: ' + fileName;
 }
 
-var input = document.getElementById( 'file-upload2' );
-var infoArea = document.getElementById( 'file-upload-filename2' );
+var input = document.getElementById( 'uplo-hp-two' );
+var infoArea = document.getElementById( 'file-upload-filename-two' );
 
 input.addEventListener( 'change', showFileName );
 
-function showFileName( event ) {
-  var input = event.srcElement;
+function showFileName( event2 ) {
+  var input = event2.srcElement;
   var fileName = input.files[0].name;
   infoArea.textContent = 'File name: ' + fileName;
 }

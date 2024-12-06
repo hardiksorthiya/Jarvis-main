@@ -756,3 +756,32 @@ input.inputRemove.dis-remove-btn {
         bottom: -30px;
   }
 }
+/* domestic */
+tr.table-domestic-hp th:before, tr.table-domestic-hp th:after, thead.domestic-hp-head th:before, thead.domestic-hp-head th:after{
+    display: none;
+}
+thead.domestic-hp-head th{
+    text-align: left;
+}
+tr.table-domestic-hp td input[type="text"], tr.table-domestic-hp th input[type="text"] {
+    border: none;
+    border-radius: 4px;
+    padding: 0;
+    font-size: 16px;
+    color: #22222250;
+    height: 40px;
+    max-width: 120px;
+}
+input.input-hp-checked {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+    margin-top: 4px;
+}
+small.small-hp-dom {
+    font-size: 10px;
+    color: #22222250;
+}
+::placeholder {
+    color: #22222250;
+}

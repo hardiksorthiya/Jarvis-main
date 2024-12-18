@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <link rel="stylesheet" href="assets/css/hpicon.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css">
+  <!-- script -->
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <div id="wrapper">
+    <!-- sidebar section -->
+     <div id="sidebar"></div>
+    <!-- navbar -->
+    <div id="navbar-wrapper">
+      <nav class="navbar navbar-inverse">
+        <div class="container">
+          <div class="navbar-header d-flex align-items-center justify-content-between">
+            <a href="#" id="sidebar-toggle">
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="34" height="34" rx="4" fill="#C4DBA0" />
+                <rect x="0.5" y="0.5" width="33" height="33" rx="3.5" stroke="#222222" stroke-opacity="0.2" />
+                <mask id="mask0_3_614" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="5" y="5" width="24"
+                  height="24">
+                  <rect x="5" y="5" width="24" height="24" fill="#D9D9D9" />
+                </mask>
+                <g mask="url(#mask0_3_614)">
+                  <path
+                    d="M15.3646 16.8979L20.8896 22.4229C21.1493 22.6826 21.2792 23.0132 21.2792 23.4146C21.2792 23.816 21.1493 24.1465 20.8896 24.4062C20.6299 24.666 20.2993 24.7958 19.8979 24.7958C19.4965 24.7958 19.166 24.666 18.9063 24.4062L12.3896 17.8896C12.2479 17.7479 12.1476 17.5944 12.0885 17.4292C12.0295 17.2639 12 17.0868 12 16.8979C12 16.709 12.0295 16.5319 12.0885 16.3667C12.1476 16.2014 12.2479 16.0479 12.3896 15.9062L18.9063 9.38958C19.166 9.12986 19.4965 9 19.8979 9C20.2993 9 20.6299 9.12986 20.8896 9.38958C21.1493 9.64931 21.2792 9.97986 21.2792 10.3813C21.2792 10.7826 21.1493 11.1132 20.8896 11.3729L15.3646 16.8979Z"
+                    fill="#222222" />
+                </g>
+              </svg>
+            </a>
+            <div class="top-bar-right">
+              <div class="notificaion d-flex align-items-center">
+                <i class="hp-notifications_unread"></i>
+                <div class="dropdown">
+                  <button class="btn btn-user-dropdown hp-dropdown d-flex align-items-center" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <div class="image-box-hp-user d-flex align-items-center">
+                      <img src="assets/images/user_images/Ellipse 4.png" alt="">
+                      <div class="user-name text-start ml-3">
+                        <h6 class="mb-0">David</h6>
+                        <p class="mb-0 small-text">David@gmail.com</p>
+                      </div>
+                    </div>
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- main section -->
+     <main id="content-wrapper">
+      <section class="page-heading">
+        <!-- heading -->
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6">
+              <div class="heading-title-page">
+                <h5>Gate entry and unloading slip</h5>
+              </div>
+            </div>
+            <div class="col-xl-8 col-lg-8 col-md-6">
+              <div class="right-side-page-heading d-flex justify-content-end">
+                <button class="btn btn-border" data-bs-toggle="modal" data-bs-target="#addvehicle">+ New entry</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- search & filter-->
+        
+      <!-- table -->
+      <section class="detail-table my-30">
+        <div class="container">
+          <div class="raw table-responsive">
+            <table class="table table-hover " id="example">
+              <thead>
+                <tr class="table-heading-hp">
+                  <th scope="col">Shipment<br>no</th>
+                  <th scope="col">Gate Entry<br>Date</th>
+                  <th scope="col">Storage<br>Location</th>
+                  <th scope="col">Inb Delivery<br>no</th>
+                  <th scope="col">Bill no.</th>
+                  <th scope="col">Total<br>Bags </th>
+                  <th scope="col">Gross<br>Weight</th>
+                  <th scope="col">Truck<br>Number</th>
+                  <th scope="col">Supplier</th>
+                  <th scope="col">Unloading<br>Supervisor Name</th>
+                  <th scope="col">Unloading<br>Contractor Name</th>
+                  <th scope="col">Action</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </section>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-end">
+          <li class="page-item"><a class="page-link" href="#"><i class="hp-dropdown right-arrow"></i>Prev</a></li>
+          <li class="page-item"><a class="page-link" href="#">1<i class="hp-dropdown"></i></a></li>
+          <li class="page-item"><a class="page-link" href="#">of 77</a></li>
+          <li class="page-item"><a class="page-link" href="#">Next<i class="hp-dropdown left-arrow"></i></a></li>
+        </ul>
+      </nav>
+    </main>
+   
+
+
+<!-- Modal -->
+  </div>
+  <script>
+    $(function(){
+  $('table').tablesorter(); 
+});
+   
+
+  </script>
+  <!-- script -->
+   <script src="assets/js/script.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.1/js/jquery.tablesorter.min.js"></script>
+</body>
+
+</html>

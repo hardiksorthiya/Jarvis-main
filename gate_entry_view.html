@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Non Compliance Report List</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="assets/css/hpicon.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
+    <!-- script -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- sidebar section -->
+        <div id="sidebar"></div>
+        <!-- navbar -->
+        <div id="navbar-wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header d-flex align-items-center justify-content-between">
+                        <a href="#" id="sidebar-toggle">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <rect width="34" height="34" rx="4" fill="#C4DBA0" />
+                                <rect x="0.5" y="0.5" width="33" height="33" rx="3.5" stroke="#222222"
+                                    stroke-opacity="0.2" />
+                                <mask id="mask0_3_614" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="5" y="5"
+                                    width="24" height="24">
+                                    <rect x="5" y="5" width="24" height="24" fill="#D9D9D9" />
+                                </mask>
+                                <g mask="url(#mask0_3_614)">
+                                    <path
+                                        d="M15.3646 16.8979L20.8896 22.4229C21.1493 22.6826 21.2792 23.0132 21.2792 23.4146C21.2792 23.816 21.1493 24.1465 20.8896 24.4062C20.6299 24.666 20.2993 24.7958 19.8979 24.7958C19.4965 24.7958 19.166 24.666 18.9063 24.4062L12.3896 17.8896C12.2479 17.7479 12.1476 17.5944 12.0885 17.4292C12.0295 17.2639 12 17.0868 12 16.8979C12 16.709 12.0295 16.5319 12.0885 16.3667C12.1476 16.2014 12.2479 16.0479 12.3896 15.9062L18.9063 9.38958C19.166 9.12986 19.4965 9 19.8979 9C20.2993 9 20.6299 9.12986 20.8896 9.38958C21.1493 9.64931 21.2792 9.97986 21.2792 10.3813C21.2792 10.7826 21.1493 11.1132 20.8896 11.3729L15.3646 16.8979Z"
+                                        fill="#222222" />
+                                </g>
+                            </svg>
+                        </a>
+                        <div class="top-bar-right">
+                            <div class="notificaion d-flex align-items-center">
+                                <i class="hp-notifications_unread"></i>
+                                <div class="dropdown">
+                                    <button class="btn btn-user-dropdown hp-dropdown d-flex align-items-center"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <div class="image-box-hp-user d-flex align-items-center">
+                                            <img src="assets/images/user_images/Ellipse 4.png" alt="" />
+                                            <div class="user-name text-start ml-3">
+                                                <h6 class="mb-0">David</h6>
+                                                <p class="mb-0 small-text">David@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- main section -->
+        <main id="content-wrapper">
+            <section class="page-heading">
+                <!-- heading -->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="heading-title-page">
+                                <h5>Gate entry and unloading view</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- table -->
+
+            <section class="table-report-hp my-30">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Shipment No. :</th>
+                                        <td>ICS Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Storage Location :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Gate Entry Date :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Bill No. :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Inb Delivery No. :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Rejected Bags :</th>
+                                        <td>ICS Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Short Bags :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Net Bags :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Bardana :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Truck Number :</th>
+                                        <td>ICS Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Gross Weight :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Pakka Aarti :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Total Bags :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Supplier  :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Bardana Quality :</th>
+                                        <td>ICS Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Unloading Location :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Unloading Supervisor Name :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Unloading Contractor Name :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <div class="col-lg-12 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Remarks (if any) :</th>
+                                        <td>ICS Name</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-12">
+                            <div class="heading-title-page">
+                                <h6>Reason of Rejection:</h6>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High broken :</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Foreign matter :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High choba :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Short length :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High moisture :</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High admixture :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Ovr all poor quality :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Bad smell :</th>
+                                        <td>Minor</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-4 col-md-6">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High damage discolour :</th>
+                                        <td>Yes</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">High chalky :</th>
+                                        <td>Name</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="col" class="lebal-hp">Less yield :</th>
+                                        <td>Name</td>
+                                    </tr>                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="row table-responsive my-30">
+                        <table class="table table-hover " id="reportDetail">
+                            <thead>
+                                <tr class="table-heading-hp">
+                                    <th scope="col">Order No.</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">UOM</th>
+                                    <th scope="col">No. of Bags</th>
+                                    <th scope="col">Quantity</th>
+                                    <th scope="col">Rate (MT)</th>
+                                    <th scope="col">Amount per MT</th>
+                                    <th scope="col">Batch</th>
+                                </tr>
+                            </thead>
+              
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <style>
+        .table-report-hp tr,
+        .table-report-hp td,
+        .table-report-hp th, .table-report-hp tbody {
+            border: none !important;
+        }
+        .table-report-hp table th:after, .table-report-hp table th:before {
+  
+   display: none;
+    
+}
+svg.hp-svg-doe-icon.svg-inline--fa.fa-upload.fa-w-16 {
+    width: 18px;
+    transform: rotate(180deg);
+}
+i.fa-solid.fa-file.rep-hp-icon {
+    font-size: 30px;
+    margin-right: 15px;
+}
+section.table-report-hp.my-30 table.table {
+    margin: 0;
+}
+section.table-report-hp.my-30 .col-lg-6.col-md-6 {
+    margin: 10px 0 0 0;
+}
+    </style>
+
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <!-- <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.1/js/jquery.tablesorter.min.js">
+    </script> -->
+</body>
+
+</html>

@@ -301,10 +301,18 @@
             <!-- table -->
         </main>
     </div>
+<script>
+    var input = document.getElementById( 'file-upload' );
+var infoArea = document.getElementById( 'file-upload-filename' );
 
-    <style>
+input.addEventListener( 'change', showFileName );
 
-    </style>
+function showFileName( event ) {
+  var input = event.srcElement;
+  var fileName = input.files[0].name;
+  infoArea.textContent = 'File name: ' + fileName;
+}
+</script>
     <!-- script -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

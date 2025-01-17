@@ -368,7 +368,7 @@ input#search {
 
 tr.table-heading-hp th {
     font-weight: 500;
-    text-align: center;
+    /* text-align: center; */
 }
 
 tbody.table-body-hp td,

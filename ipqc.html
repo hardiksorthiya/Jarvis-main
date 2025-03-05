@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gate Entry</title>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media.css" />
+    <link rel="stylesheet" href="assets/css/hpicon.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css" />
+    <!-- script -->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <!-- sidebar section -->
+        <div id="sidebar"></div>
+        <!-- navbar -->
+        <div id="navbar-wrapper">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header d-flex align-items-center justify-content-between">
+                        <div class="top-bar-left">
+                            <a href="#" id="sidebar-toggle">
+                                <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <rect width="34" height="34" rx="4" fill="#C4DBA0" />
+                                    <rect x="0.5" y="0.5" width="33" height="33" rx="3.5" stroke="#222222"
+                                        stroke-opacity="0.2" />
+                                    <mask id="mask0_3_614" style="mask-type: alpha" maskUnits="userSpaceOnUse" x="5"
+                                        y="5" width="24" height="24">
+                                        <rect x="5" y="5" width="24" height="24" fill="#D9D9D9" />
+                                    </mask>
+                                    <g mask="url(#mask0_3_614)">
+                                        <path
+                                            d="M15.3646 16.8979L20.8896 22.4229C21.1493 22.6826 21.2792 23.0132 21.2792 23.4146C21.2792 23.816 21.1493 24.1465 20.8896 24.4062C20.6299 24.666 20.2993 24.7958 19.8979 24.7958C19.4965 24.7958 19.166 24.666 18.9063 24.4062L12.3896 17.8896C12.2479 17.7479 12.1476 17.5944 12.0885 17.4292C12.0295 17.2639 12 17.0868 12 16.8979C12 16.709 12.0295 16.5319 12.0885 16.3667C12.1476 16.2014 12.2479 16.0479 12.3896 15.9062L18.9063 9.38958C19.166 9.12986 19.4965 9 19.8979 9C20.2993 9 20.6299 9.12986 20.8896 9.38958C21.1493 9.64931 21.2792 9.97986 21.2792 10.3813C21.2792 10.7826 21.1493 11.1132 20.8896 11.3729L15.3646 16.8979Z"
+                                            fill="#222222" />
+                                    </g>
+                                </svg>
+                            </a>
+
+                        </div>
+
+
+                        <div class="top-bar-right">
+                            <div class="notificaion d-flex align-items-center">
+                                <i class="hp-notifications_unread"></i>
+                                <div class="dropdown">
+                                    <button class="btn btn-user-dropdown hp-dropdown d-flex align-items-center"
+                                        type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <div class="image-box-hp-user d-flex align-items-center">
+                                            <img src="assets/images/user_images/Ellipse 4.png" alt="" />
+                                            <div class="user-name text-start ml-3">
+                                                <h6 class="mb-0">David</h6>
+                                                <p class="mb-0 small-text">David@gmail.com</p>
+                                            </div>
+                                        </div>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- main section -->
+        <main id="content-wrapper">
+            <section class="page-heading">
+                <!-- heading -->
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-6">
+                      <div class="heading-title-page">
+                        <h5>IPQC-Processing Unit Summary</h5>
+                      </div>
+                    </div>
+                    <div class="col-6">
+                      <div class="right-side-page-heading d-flex justify-content-end">
+                          <a class="btn btn-border" href="#" >Back</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- search & filter-->
+              </section>
+              <!-- table -->
+              <section class="detail-table my-30">
+                <div class="container my-30">
+                    <div class="row">
+                        <form action="" class="form-hp-gate-entry">
+                            <div class="row filter">
+
+                                <div class="col-lg-6 col-md-6 col-xxl-3">
+                                    <label for="vehicle entry date" class="lebal-hp">From date</label>
+                                    <input type="date" name="" class="input-hp" placeholder="Number">
+                        
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-xxl-3">
+                                    <label for="vehicle entry date" class="lebal-hp">To date</label>
+                                    <input type="date" name="" class="input-hp" placeholder="Number">
+                                    
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xxl-3">
+                                    <label for="vehicle entry date" class="lebal-hp">Processing Unit</label>
+                                    <select class="input-hp form-select form-select-lg"
+                                        aria-label=".form-select-lg example">
+                                        <option selected>
+                                            <Select:disabled>Select</Select:disabled>
+                                        </option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xxl-3">
+                                    <label for="vehicle entry date" class="lebal-hp">Variety</label>
+                                    <select class="input-hp form-select form-select-lg"
+                                        aria-label=".form-select-lg example">
+                                        <option selected>
+                                            <Select:disabled>Select</Select:disabled>
+                                        </option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-6">
+                                    <button class="btn btn-apply filterButton" id="">Apply</button>
+                                </div>
+                            </div>
+                    </div>
+
+
+                    
+                    </form>
+                </div>
+              </section>
+
+              <section class="detail-table">
+                <div class="container-fluid">
+                    <div class="row table-responsive">
+                        <table class="table table-hover" id="ListDataTable">
+                            <thead>
+                                <tr class="table-heading-hp">
+                                    <th scope="col">Sr. No</th>
+                                    <th scope="col">Processing Unit</th>
+                                    <th scope="col">Variety</th>
+                                    <th scope="col">Allocation No.</th>
+                                    <th scope="col">Issuance No./ STO No.</th>
+                                    <th scope="col">Physical Issuance Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Action</th>
+                                </tr>
+        
+                            </thead>
+                            <tbody class="table-body-hp">
+                                <tr>
+                                    <th scope="row">1</th>
+                                    <td>Nature Bio</td>
+                                    <td>Organic Long</td>
+                                    <td>A133365</td>
+                                    <td>12/02/2024</td>
+                                    <td>Pending</td>
+                                    <td>2968</td>
+                                    <td>
+                                      <a href="#eye"><i class="hp-eye"></i></a>
+                                      <button style="background: transparent;
+    border: none;"  data-bs-toggle="modal" data-bs-target="#addplant1"><img src="assets/images/arrow_back_r.svg" alt="" style="top: -4px;
+    position: relative;"></button>
+                                    </td>
+                                  </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- model -->
+        <div class="modal fade " id="addplant1" tabindex="-1" aria-labelledby="addplant1Label" aria-hidden="true" data-backdrop="false">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="addplant1Label">Select plant</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <form action="" class="popup-hp">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12">
+                          <label for="vehicle entry date" class="lebal-hp">Plant Name</label>
+                          <select class="input-hp form-select form-select-lg " aria-label=".form-select-lg example">
+                            <option selected>Select</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer-hp">
+                  <button type="button" class="btn btn-border" data-bs-dismiss="modal">Cancel</button>
+                  <button type="button" class="btn btn-submit">Assign</button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+    <style>
+
+    </style>
+    <!-- script -->
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.30.1/js/jquery.tablesorter.min.js"></script>
+</body>
+
+</html>

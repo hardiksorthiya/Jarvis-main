@@ -373,7 +373,7 @@ tr.table-heading-hp th {
 
 tbody.table-body-hp td,
 tbody.table-body-hp th {
-    text-align: center;
+    /* text-align: center; */
     color: #22222250;
     font-weight: normal;
 }
